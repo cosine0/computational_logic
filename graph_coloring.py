@@ -33,7 +33,7 @@ def main():
             has_color_terms.append(f'col_{vertex}_{color}')
 
         if len(has_color_terms) == 1:
-            one_color_terms.append(f' has_color_terms[0]')
+            one_color_terms.append(f' {has_color_terms[0]}')
         if len(has_color_terms) >= 2:
             one_color_terms.append(' (or ' + ' '.join(has_color_terms) + ')')
 
