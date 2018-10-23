@@ -8,6 +8,7 @@ except ImportError:
 
 
 def main():
+    # inputs
     number_of_teachers = int(input('Number of teachers: '))
     number_of_subjects = int(input('Number of subjects: '))
     k = int(input('k: '))
@@ -20,6 +21,7 @@ def main():
         for subject in can_teach.split():
             subject_to_teachers[int(subject)].append(teacher)
 
+    # make z3 code
     z3_code = ''
     for teacher in range(number_of_teachers):
         z3_code += f'(declare-const teach_{teacher} Bool)\n'
@@ -58,6 +60,7 @@ def main():
     z3_code += '(assert f)\n'
     z3_code += '(check-sat)\n'
 
+    # print & execute
     while True:
         what_to_do = input("What to print ('z3', 'check', 'model', or 'exit'): ")
         if what_to_do == 'z3':

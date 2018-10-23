@@ -8,6 +8,7 @@ except ImportError:
 
 
 def main():
+    # inputs
     number_of_vertices = int(input('Number of vertices: '))
     number_of_colors = int(input('Number of colors: '))
 
@@ -20,6 +21,7 @@ def main():
         first_vertex, second_vertex = map(int, edge.split())
         edges.add(tuple(sorted([first_vertex, second_vertex])))
 
+    # make z3 code
     z3_code = ''
     for vertex in range(number_of_vertices):
         for color in range(number_of_colors):
@@ -51,6 +53,7 @@ def main():
     z3_code += '(assert f)\n'
     z3_code += '(check-sat)\n'
 
+    # print & execution
     while True:
         what_to_do = input("What to print ('z3', 'check', 'model', or 'exit'): ")
         if what_to_do == 'z3':
