@@ -4,7 +4,7 @@ Encoded problems in to a propositional logic satisfiability problem which [z3](h
 
 Graph Coloring
 ---  
-The problem to color graph vertices such that no adjacent two vertices have the same color   
+The problem to color graph vertices such that no adjacent two vertices have the same color.   
 
 Teacher-Subject problem
 ---  
