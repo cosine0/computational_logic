@@ -8,4 +8,4 @@ The problem to color graph vertices such that no adjacent two vertices have the 
 
 Teacher-Subject problem
 ---  
-The problem, when sets of teachers and subjects are given and each teacher can teach a certain subset of subjects, deciding if only ```k``` teachers can cover all subjects.  
+The problem, when sets of teachers and subjects are given and each teacher can teach a certain subset of subjects, deciding if only `k` teachers can cover all the subjects.  
